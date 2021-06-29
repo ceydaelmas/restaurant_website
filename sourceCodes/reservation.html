@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/reservation.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;500;700&display=swap');
+    </style>
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <!--NAVBAR-->
+
+    <div class="top-bar">
+
+        <div class="logo">
+            <a href="home.html" style="text-decoration: none;" >Apollon</a>
+            <a href="home.html" ><img class="logo-image" src="images/apollon.png"></a>
+        </div>
+
+        <nav class="nav">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html" class="active">Reservation</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--END OF NAVBAR-->
+    <!--END OF NAVBAR-->
+
+    <!--RESERVATION-->
+    <!--RESERVATION-->
+
+    <section class="reservation">
+        <div id="reservation" class="form-container">
+    
+            <div class="flex-title">
+                <h2>Reservation</h2>
+            </div>
+    
+            <form action="#" class="form">
+               
+               <div class="row">
+                
+                <div class="tablo">
+                        <div class="form-group">
+                      <label for="name">Name Surname</label><br>
+                      <input type="text" placeholder="Name Surname" id="name">
+                   </div>
+                </div>
+                
+                <div class="tablo">
+                        <div class="form-group">
+                      <label for="date">Date</label><br>
+                      <input type="date" placeholder="Date" id="date">
+                   </div>
+                </div>
+                
+                <div class="tablo">
+                        <div class="form-group">
+                      <label for="mail">E-mail</label><br>
+                      <input required type="email" placeholder="E-mail" id="mail">
+                   </div>
+                </div>
+                
+                <div class="tablo">
+                        <div class="form-group">
+                      <label for="tel">Phone</label><br>
+                      <input type="tel" placeholder="Phone" id="tel">
+                   </div>
+                </div>
+    
+                <div class="tablo">
+                        <div class="form-group">
+                      <label for="time">Time</label><br>
+                      <input type="time" placeholder="Time" id="time">
+                   </div>
+                </div>
+                
+                <div class="tablo">
+                        <div class="form-group">
+                      <label for="person">Person</label><br>
+                      <select name="person" id="person" required>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                      </select>
+                   </div>
+                </div>
+    
+                <input type="button" onclick="alert('Thanks! Your reservation has been created.')" value="Make a Reservation" id="make" >           
+    
+            </form>
+        </div>
+    </section>
+    
+        <!--END OF RESERVATION SECTION-->
+        <!--END OF RESERVATION SECTION-->
+
+
+
+    <!--END OF RESERVATION-->
+    <!--END OF RESERVATION-->
+
+ <!--CONTACT US-->
+ <!--CONTACT US-->
+
+ <section class="contact">
+    <div class="content">
+        <h2>Contact Us</h2>
+    </div>
+    <div class="container">
+        <div class="contactInfo">
+            <div class="box">
+                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> </div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>60W 53rd St, New York,<br> NY 10019, USA</p>
+                    </div>
+                </div>
+            <div class="box">
+                <div class="icon"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> </div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+1 212-315-3660</p>
+                    </div>
+                </div>
+            <div class="box">
+                <div class="icon"> <i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>E-mail</h3>
+                        <p><E-mail>apollon@restaurant.com</E-mail></p>
+                    </div>       
+            </div>
+        </div>
+        <div class="contactUs">
+            <h2>Let's Be Sociable</h2>
+            <div class="boxx">
+                 <div class="icon-social">
+                     <a href="#" style="color: white;"> <i class="fa fa-instagram" aria-hidden="true"></i></a> </div>
+            <div class="icon-social">
+                <a href="#" style="color: white;"> <i class="fa fa-facebook-square" aria-hidden="true"></i> </a>    
+            </div>
+            <div class="icon-social">
+                <a href="#"style="color: white;"><i class="fa fa-twitter" aria-hidden="true"></i>  </a> 
+                
+            </div>
+            </div>
+           
+        </div>
+    </div>
+</section>
+
+ <!--END OF CONTACT US-->
+ <!--END OF CONTACT US-->
+    
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apollon</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/menu-categories.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;500;700&display=swap');
+   </style>
+</head>
+<body>
+  <div class="wholepage" id="blur">
+  <div class="top-bar">
+    <div class="logo">
+      <a href="home.html" style="text-decoration: none;" >Apollon</a>
+      <a href="home.html" ><img class="logo-image" src="images/apollon.png"></a>
+  </div>
+    <nav class="nav">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html" >About</a></li>
+            <li><a href="menu.html"class="active">Menu</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+    <div class="banner-starters">
+        <div class="banner-text">
+            <div class="banner-text-item">
+                
+            </div>
+        </div>
+    </div>
+<div class="body">
+    <div class="menu-categories">
+        <h1>STARTERS</h1>     
+    </div>
+
+<div class="menu-items">
+      <section>
+        <h2  class="menu-item" id="peppered"><a href="#" onclick="toggle1()">Peppered Lemon Calamari</a> </h2>
+        <span></span>
+        <h3 class="price">  $3.50 </h3>
+      </section>
+      <section>
+        <h2  class="menu-item"><a href="#" onclick="toggle2()">Beef Brisket Pasty</a> </h2>
+        <span></span>
+        <h3 class="price">  $4.75 </h3>
+      </section>
+      <section>
+        <h2 class="menu-item"><a href="#" onclick="toggle3()">Chicken Liver Pâté</a> </h2>
+        <span></span>
+        <h3 class="price">  $6.50 </h3>
+      </section>
+      <section>
+        <h2 class="menu-item"><a href="#" onclick="toggle4()">Smoked Paprika Houmous</a> </h2>
+        <span></span>
+        <h3 class="price">  $7.00 </h3>
+      </section>
+      <section>
+        <h2 class="menu-item"><a href="#" onclick="toggle5()">Blackened Fish Tacos</a> </h2>
+        <span></span>
+        <h3 class="price">  $7.25 </h3>
+      </section>
+    </div>
+  </div>
+
+
+    <section class="contact">
+      <div class="content">
+          <h2>Contact Us</h2>
+      </div>
+      <div class="container">
+          <div class="contactInfo">
+              <div class="box">
+                  <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> </div>
+                      <div class="text">
+                          <h3>Address</h3>
+                          <p>60W 53rd St, New York,<br> NY 10019, USA</p>
+                      </div>
+                  </div>
+              <div class="box">
+                  <div class="icon"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> </div>
+                      <div class="text">
+                          <h3>Phone</h3>
+                          <p>+1 212-315-3660</p>
+                      </div>
+                  </div>
+              <div class="box">
+                  <div class="icon"> <i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                      <div class="text">
+                          <h3>E-mail</h3>
+                          <p><E-mail>apollon@restaurant.com</E-mail></p>
+                      </div>       
+              </div>
+          </div>
+          <div class="contactUs">
+              <h2>Let's Be Sociable</h2>
+              <div class="boxx">
+                   <div class="icon-social">
+                       <a href="#" style="color: white;"> <i class="fa fa-instagram" aria-hidden="true"></i></a> </div>
+              <div class="icon-social">
+                  <a href="#" style="color: white;"> <i class="fa fa-facebook-square" aria-hidden="true"></i> </a>    
+              </div>
+              <div class="icon-social">
+                  <a href="#"style="color: white;"><i class="fa fa-twitter" aria-hidden="true"></i>  </a> 
+                  
+              </div>
+              </div>
+             
+          </div>
+      </div>
+    </section>
+  </div>
+  
+
+    
+      
+     
+
+
+
+<div class="popup" id="popup1">
+  <img src="images/Peppered Lemon Calamari.jpg">
+  <a href="#" onclick="toggle1()">Close</a> 
+</div>
+
+<div class="popup" id="popup2">
+  <img src="images/Beef Brisket Pasty.jpg">
+  <a href="#" onclick="toggle2()">Close</a> 
+</div>
+
+<div class="popup" id="popup3">
+  <img src="images/Chicken Liver Pâté.jpg">
+  <a href="#" onclick="toggle3()">Close</a> 
+</div>
+
+<div class="popup" id="popup4">
+  <img src="images/Smoked Paprika Houmous.jpg">
+  <a href="#" onclick="toggle4()">Close</a> 
+</div>
+
+<div class="popup" id="popup5">
+  <img src="images/Blackened Fish Tacos.jpg">
+  <a href="#" onclick="toggle5()">Close</a> 
+</div>
+
+<script type="text/javascript">
+  function toggle1() {
+    var blur = document.getElementById('blur');
+    blur.classList.toggle('active');
+    var popup1 = document.getElementById('popup1');
+    popup1.classList.toggle('active');
+    }
+
+  function toggle2() {
+    var blur = document.getElementById('blur');
+    blur.classList.toggle('active');
+    var popup2 = document.getElementById('popup2');
+    popup2.classList.toggle('active');
+  }
+
+  function toggle3() {
+    var blur = document.getElementById('blur');
+    blur.classList.toggle('active');
+    var popup3 = document.getElementById('popup3');
+    popup3.classList.toggle('active');
+  }
+
+  function toggle4() {
+    var blur = document.getElementById('blur');
+    blur.classList.toggle('active');
+    var popup4 = document.getElementById('popup4');
+    popup4.classList.toggle('active');
+  }
+
+  function toggle5() {
+    var blur = document.getElementById('blur');
+    blur.classList.toggle('active');
+    var popup5 = document.getElementById('popup5');
+    popup5.classList.toggle('active');
+  }
+  </script>
+    
+</body>
+</html>
